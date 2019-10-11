@@ -21,7 +21,7 @@ else
     title=$(echo "$document" | grep "ZADEVA" | cut -d "|" -f 3 | tr "\\n\\r" " " | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | sed "s/  / /g")
 fi
 
-documentId=$(basename $f ".doc")
+documentId=$(basename "$f" ".doc")
 if [ "$LOG_LEVEL" == "debug" ]; then  
     echo "Document id: $documentId"
     echo "Title: $title"
