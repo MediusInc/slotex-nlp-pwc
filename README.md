@@ -5,7 +5,7 @@ and doc documents, construct appropriate json file and post the documents
 content to the SloTex NLP core server. 
 
 [![Build Status](https://travis-ci.org/MediusInc/slotex-nlp-web.svg?branch=master)](https://travis-ci.org/MediusInc/slotex-nlp-web)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License](https://img.shields.io/github/license/MediusINC/slotex-nlp-pwc)](https://github.com/MediusInc/slotex-nlp-pwc/blob/master/LICENSE.md)
 [![Slack](https://img.shields.io/badge/slack-@pkp2019-yellow.svg?logo=slack)](https://join.slack.com/t/pkp2019-slotex/shared_invite/enQtNzkwNTk5MDMyOTc2LTNhOTQ0MTU3ZDMzMDM2NDRhYTRlNWRkOWRmZTk0N2YzNmExNDliYTU1NGI4NWFjNjFhNTFkNTcyNzhlZGIzZmU)
 
 ## Requirements
