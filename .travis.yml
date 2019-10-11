@@ -12,7 +12,7 @@ install:
 - shellcheck --version
 script:
 - shellcheck --version
-- shellcheck $(grep -rl '"^#!/bin/sh\|^#!/bin/bash\|^#!/usr/bin/env bash' ./ | grep -v ".git\|travis.yml")
+- shellcheck -e SC2181 $(grep -rl '"^#!/bin/sh\|^#!/bin/bash\|^#!/usr/bin/env bash' ./ | grep -v ".git\|travis.yml")
 notifications:
   slack:
     secure: TdOx4Ndwmu7by30uMXHAxBjJHS8R1hUndGiiKgnB2kOT2P/trMCZciy9wcavIY7G54jjlaePLMVp9bvdX8PvDW1KfYGwuAlyw7ssmhUtQm2ZYEGtKvqwASMSizNx8na2QAVKHLtOm0ZP0CaiTW7HwNmM0ezeXDTYcH35spnNKewpVAnvTX2Mlhc4FnsMtl7D/ycTjglxHEJQJnPQew+X0P/9zfRA12QuaFC1jdEU1DU+MCmoDHUFkKkPyEBHsEc9FmuWJCcLbFTMNUG2izq0zjtnsoLY+TvWQD+e1Z5u69AWJ7CweWEQ5NFvo0YwA0maPrNC8ghs4q+r+9WhHUiG3Pyym4uQ0WvgQz0qS6lexF2rmcxKw3p/NGuoDvRP25dpjxFUVgHiRW97Jc0V7P6HDGrPg3sdHVJRbIfyX5mGnORT+jEnWMFSUQym2bbBfTKMHrZ91EaLscb9kfajc18NUUkc1QtnNb2+QQNCid4Bkq8aUZ1sXBQTcYU6/gU5ibFVUNQiRgsDKX3TV5oDgwcyqKOPyXGzODpzI1oncXqpN+VQyAlKGhdWX41FiAaE2/ZnCz8iafxaH/nabzHPKNTH/j9NtzlQCSyn+sDGmpzSTIwwRJGGARagMk7BIw2R8fEL31TXimKYk3e1bTw2kS/Xm0+3NhSkJqMQoGAtviQlESg=
