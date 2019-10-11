@@ -1,12 +1,19 @@
+language: minimal
+cache:
+  directories:
+    - $HOME/bin
+
+before_install:
+  - sudo apt-get update
+
 install:
   # Install a custom version of shellcheck instead of Travis CI's default
   - scversion="v0.7.0" 
-  - wget https://storage.googleapis.com/shellcheck/shellcheck-$scversion.linux.x86_64.tar.xz"
-  - tar --xz -xvf "shellcheck-$scversion.linux.x86_64.tar.xz"
-  - shellcheck() { "shellcheck-$scversion/shellcheck" "$@"; }
+  - if [ ! -f "$HOME/bin/shellcheck" ]; then curl -L -O https://storage.googleapis.com/shellcheck/shellcheck-$scversion.linux.x86_64.tar.xz; tar --xz -xvf "shellcheck-$scversion.linux.x86_64.tar.xz"; mv shellcheck-$scversion/shellcheck $HOME/bin/; chmod +x $HOME/bin/shellcheck; fi
   - shellcheck --version
 
 script:
+  - shellcheck --version
   - shellcheck $(grep -rl '"^#!/bin/sh\|^#!/bin/bash\|^#!/usr/bin/env bash' ./ | grep -v ".git\|travis.yml")
 
 notifications:
