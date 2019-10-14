@@ -1,8 +1,8 @@
 ![SloTex NLP PWC Logo](https://slotex.si/images/slotex_logo_pwc.svg)
 
-The Slotex NLP Post with Curl is a tiny bash program which allows to parse txt
-and doc documents, construct appropriate json file and post the documents
-content to the SloTex NLP core server. 
+The Slotex NLP Post with Curl is a tiny bash script which enable parsing of the 
+txt and doc documents. It also construct appropriate json file and post documents
+content to the SloTex NLP core backend. 
 
 [![Build Status](https://travis-ci.org/MediusInc/slotex-nlp-web.svg?branch=master)](https://travis-ci.org/MediusInc/slotex-nlp-web)
 [![License](https://img.shields.io/github/license/MediusINC/slotex-nlp-pwc)](https://github.com/MediusInc/slotex-nlp-pwc/blob/master/LICENSE.md)
