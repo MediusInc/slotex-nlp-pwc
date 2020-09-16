@@ -4,7 +4,7 @@ The Slotex NLP Post with Curl is a tiny bash script which enable parsing of the
 txt and doc documents. It also construct appropriate json file and post documents
 content to the SloTex NLP core backend. 
 
-[![Build Status](https://travis-ci.org/MediusInc/slotex-nlp-web.svg?branch=master)](https://travis-ci.org/MediusInc/slotex-nlp-web)
+[![Build Status](https://travis-ci.com/MediusInc/slotex-nlp-pwc.svg?branch=master)](https://travis-ci.com/github/MediusInc/slotex-nlp-pwc)
 [![License](https://img.shields.io/github/license/MediusINC/slotex-nlp-pwc)](https://github.com/MediusInc/slotex-nlp-pwc/blob/master/LICENSE.md)
 [![Slack](https://img.shields.io/badge/slack-@pkp2019-yellow.svg?logo=slack)](https://join.slack.com/t/pkp2019-slotex/shared_invite/enQtNzkwNTk5MDMyOTc2LTNhOTQ0MTU3ZDMzMDM2NDRhYTRlNWRkOWRmZTk0N2YzNmExNDliYTU1NGI4NWFjNjFhNTFkNTcyNzhlZGIzZmU)
 
